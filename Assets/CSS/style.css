@@ -1,3 +1,4 @@
+/* Root and variable CSS */
 :root {
     --standard-padding: 0 20px;
     --primary-bg: rgba(255, 255, 255, 0.9);
@@ -20,12 +21,15 @@ body {
     color: black;
 }
 
+/* Max width of content */
 #site-container {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
+
+/* Navigation styles */
 nav {
     text-align: center;
 }
@@ -56,6 +60,8 @@ nav a {
 #aboutMe:target .section-title, #myWork:target .section-title,  #contactMe:target .section-title {
     background: #cfd2bc;
   }
+
+/* Header area styling */
 
 header {
     width: 100%;
@@ -122,6 +128,8 @@ font-weight: normal;
     border: solid 4px;
     border: var(--box-border);
 }
+
+/* Main content section styling */
 
 main {
     padding: 0 20px;
@@ -200,6 +208,8 @@ main {
     background-image: url("https://cdn-production.checkfront.com/wp-content/uploads/2022/05/about-online-reservation-system.jpg");
 }
 
+/* This helps cotrol the full box (image and text) as one link */
+
 .image-over {
     position: absolute;
     height: 100%;
@@ -230,6 +240,8 @@ main {
 .email, .linkedin, .telephone {
     margin-left: 20px;
   }
+
+ /* Responsive mode controlled by below media queries */
 
   @media only screen and (max-width: 63em){
     header {
