@@ -1,7 +1,7 @@
 :root {
     --standard-padding: 0 20px;
     --primary-bg: rgba(255, 255, 255, 0.9);
-    --secondary-bg: #93a343;
+    --secondary-bg: rgba(235, 34, 182, 0.8);
     --main-title-color:  #0c407c;
     --secondary-title-color: rgb(255, 255, 255);
     --primary-color: #0a1670; 
@@ -126,9 +126,6 @@ font-weight: normal;
     margin-top: 50px;
 }
 
-#aboutMe {
-    grid-template-columns: 300px 1fr;
-}
 
 .section-title {
     text-align: center;
@@ -146,9 +143,51 @@ font-weight: normal;
 	background: rgba(255, 255, 255, 0.9);
 	border-radius: 30px;
     border: solid 4px;
-    border: var(--box-border); 
+    border: var(--box-border);
+    font-size: 1.2em; 
 }
 
+#aboutMe {
+    grid-template-columns: 300px 1fr;
+}
 
+#myWork {
+    grid-template-columns: 300px 1fr;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+}
+
+#portfolioProject1 {
+    background-image: url("https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1 / span 3;
+    position: relative;
+    border-radius: 30px;
+    border: solid 4px;
+    border: var(--box-border);
+}
+
+.image-over {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.text-over {
+    position: absolute;
+    width: 100%;
+    font-size: 2em;
+    background: var(--secondary-bg);
+    bottom: 0;
+    color: var(--secondary-title-color);
+    padding: 10px 0 10px 30px;
+    box-sizing: border-box;
+}
 
 
