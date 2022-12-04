@@ -1,0 +1,154 @@
+:root {
+    --standard-padding: 0 20px;
+    --primary-bg: rgba(255, 255, 255, 0.9);
+    --secondary-bg: #93a343;
+    --main-title-color:  #0c407c;
+    --secondary-title-color: rgb(255, 255, 255);
+    --primary-color: #0a1670; 
+    --alert-color: #a75b68;
+    --box-border: solid 4px #0c407c;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100%;
+    background-image: url("../images/paisley-bg.jpg");
+    background-size: cover;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+#site-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+nav a {
+    text-align: center;
+    background: var(--primary-bg);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: solid 4px;
+    border-color: var(--box-border);
+    color: var(--main-title-color);
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+	margin: 0 0 20px;
+	line-height: 1.2;
+	color: var(--alert-color);
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+h2 {
+margin: 0;
+line-height: 1.2;
+color: var(--alert-color);
+font-family: 'Roboto', sans-serif;
+font-size: 2em;
+font-weight: normal;
+}
+
+#portfolio-image {
+	margin: 0 auto;
+	text-align: center;
+    border: var(--box-border);
+    border: solid 4px;
+	padding: 40px;
+	background: var(--primary-bg);
+	border-radius: 30px;
+	color: var(--primary-color);
+	font-size: 1.5em;
+	line-height: 1.2;
+}
+
+
+
+#portfolio-image img {
+	width: 180px;
+	border-radius: 50%;
+	margin: 0 20px;
+}
+
+
+#bio-intro {
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 30px;
+	color: var(--primary-color);
+	font-size: 2em;
+	line-height: 1.2;
+    border: solid 4px;
+    border: var(--box-border);
+}
+
+.alert-color {
+    color: var(--alert-color);
+}
+
+.grid {
+    display: grid;
+    gap: 50px;
+    align-items: start;
+    margin-top: 50px;
+}
+
+#aboutMe {
+    grid-template-columns: 300px 1fr;
+}
+
+.section-title {
+    text-align: center;
+    padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 30px;
+	color: var(--primary-color);
+    border: solid 4px;
+    border: var(--box-border); 
+}
+
+.section-bio-text {
+    text-align: left;
+    padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 30px;
+    border: solid 4px;
+    border: var(--box-border); 
+}
+
+
+
+
